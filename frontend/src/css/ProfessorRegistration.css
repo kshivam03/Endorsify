@@ -1,0 +1,164 @@
+.ProfessorBox {
+  width: 60vw;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-bottom: 20px;
+}
+
+.column {
+  flex: 1;
+  margin-right: 100px;
+  margin-bottom: 10px;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #888;
+  border: 2px dashed #aaa;
+  cursor: pointer;
+}
+.square-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #888;
+  border: 2px dashed #aaa;
+  cursor: pointer;
+  margin-bottom: 10px;
+  overflow: hidden; 
+  background-size: cover; 
+}
+
+.square-box:hover {
+  border-color: #333;
+}
+
+.square-box img {
+  width: 170px; 
+  height: auto;  
+  margin: 0; 
+  padding: 0; 
+}
+
+.circle img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.Professor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.professor-profile-form {
+  margin: 20px;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input{
+  width: 14vw; 
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[name='portfolioURL'] {
+  width: calc(100% - 20px); 
+  max-width: 600px; 
+}
+
+
+
+textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.btn3 {
+  width: 25px;
+  height: 25px;
+  background-color: #586d84;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.psubmitbtn {
+  background-color: #586d84;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  left: 45%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+button {
+  background-color: #586d84;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 100%;
+    margin-right: 0;
+  }
+
+  .square-box{
+    width: 100%;
+    margin-right: 0;
+  }
+  .circle {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+}
